@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/philliphqs/StreamDeck/main/Project/ICON_with_TEXT_compressed.png" alt="ICON_with_TEXT" width="770" height="140">
+<img src="https://raw.githubusercontent.com/philliphqs/StreamDeck/main/Project/ICON_with_TEXT_compressed.png" alt="ICON_with_TEXT" width="770" height="130">
 
 > Use any device which can run python as a streamdeck like a Raspberry Pi
 
