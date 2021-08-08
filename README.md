@@ -1,10 +1,6 @@
 # StreamDeck
 > Use any device which can run python as a streamdeck like a Raspberry Pi
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
 An nice alternative for the Elgato StreamDeck if you want to save some money
 
 ![](./header.png)
