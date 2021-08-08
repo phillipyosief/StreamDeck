@@ -1,5 +1,5 @@
-# StreamDeck
-![alt text](https://github.com/philliphqs/StreamDeck/ "Logo Title Text 1")
+<h1>StreamDeck</h1> <img src="https://raw.githubusercontent.com/philliphqs/StreamDeck/main/StreamDeck-Client/resources/ICON.png" alt="Logo" width="100" height="100">
+
 > Use any device which can run python as a streamdeck like a Raspberry Pi
 
 An nice alternative for the Elgato StreamDeck if you want to save some money
