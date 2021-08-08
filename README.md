@@ -8,7 +8,6 @@ An nice alternative for the Elgato StreamDeck if you want to save some money
 
 ## Installation
 
-Windows
   1. Download [``StreamDeck.zip``](https://github.com/philliphqs/)
   2. Extract ``StreamDeck.zip``
   3. Press Win + R and type ``shell:startup``
