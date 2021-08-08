@@ -8,16 +8,15 @@ An nice alternative for the Elgato StreamDeck if you want to save some money
 
 ## Installation
 
-  1. Download [``StreamDeck.zip``](https://github.com/philliphqs/)
-  2. Extract ``StreamDeck.zip``
-  3. Press Win + R and type ``shell:startup``
-  4. Put the ``StreamDeck-Server.exe`` in the folder
-  5. Restart your Computer
-  6. Take your StreamDeck device and download Python 3.9 
-  7. Download [``StreamDeck.zip``](https://github.com/philliphqs/)
-  8. Extract ``StreamDeck.zip``
-  9. Open Terminal and type ```python -m pip install dearpygui, requests```
-  10. Type ```python StreamDeck-Client.py```
+  1. Download [``StreamDeck-Server.exe``](https://github.com/philliphqs/)
+  2. Press Win + R and type ``shell:startup``
+  3. Put the ``StreamDeck-Server.exe`` file in the folder
+  4. Restart your Computer
+  5. Take your StreamDeck device and download Python 3.9 
+  6. Download [``StreamDeck.zip``](https://github.com/philliphqs/)
+  7. Extract ``StreamDeck.zip``
+  8. Open Terminal and type ```python -m pip install dearpygui, requests```
+  9. Type ```python StreamDeck-Client.py```
 
 
 ## Clone Repository
