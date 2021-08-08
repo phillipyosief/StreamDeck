@@ -31,6 +31,13 @@ git clone https://github.com/philliphqs/StreamDeck.git
 * 0.0.1-alpha
     * Prototype
 
+## Coming features
+
+* 0.1.0-alpha
+    * Customization of Buttons
+* 0.0.5-alpha
+    * Support for phone
+
 ## Meta
 
 philliphqs – [@phillip_hqs](https://twitter.com/philliphqs) – [philliphqs@protonmail.com](mailto:philliphqs@protonmail.com)
