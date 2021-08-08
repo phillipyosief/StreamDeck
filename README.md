@@ -4,7 +4,7 @@
 
 An nice alternative for the Elgato StreamDeck if you want to save some money
 
-![](./header.png)
+![](https://media.discordapp.net/attachments/761721971129843712/874049796338483290/unknown.png?width=782&height=440)
 
 
 ## Installation
@@ -30,6 +30,13 @@ git clone https://github.com/philliphqs/StreamDeck.git
 
 * 0.0.1-alpha
     * Prototype
+
+## Coming features
+
+* 0.1.0-alpha
+    * Customization of Buttons
+* 0.0.5-alpha
+    * Support for phone
 
 ## Meta
 
