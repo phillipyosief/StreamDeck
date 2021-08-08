@@ -21,7 +21,7 @@ Windows
   10. Type ```python StreamDeck-Client.py```
 
 
-## Obter repositório
+## Clone Repository
 
 ```sh
 git clone https://github.com/philliphqs/StreamDeck.git
