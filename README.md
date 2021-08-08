@@ -4,7 +4,7 @@
 
 An nice alternative for the Elgato StreamDeck if you want to save some money
 
-![](./header.png)
+![](https://media.discordapp.net/attachments/761721971129843712/874049796338483290/unknown.png?width=782&height=440)
 
 
 ## Installation
