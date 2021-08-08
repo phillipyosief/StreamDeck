@@ -1,0 +1,32 @@
+{
+  "buttons": {
+    "1": {"title": "Ebene Rastern", "description": "Ebene Rastern (Photoshop) (Shortcut: Strg + Shift + R)"},
+    "2": {"title": "Schnell-Export", "description": "Schnell-Export (Photoshop) (Shortcut: Umschalt + Strg + S)"},
+    "3": {"title": "Exportieren als", "description": "Exportieren als (Photoshop) (Shortcut: Alt + Umschalt + Strg + W)"},
+    "4": {"title": "Fülloptionen", "description": "Fülloptionen (Photoshop) (Shortcut: Alt + Umschalt + Strg + F)"},
+    "5": {"title": "Zuschneiden", "description": "Zuschneiden (Photoshop) (Shortcut: Alt + Strg + Umschalt + Z)"},
+    "6": {"title": "Std. Workspace", "description": "Standard Arbeitsbereich (Photoshop) (Shortcut: Umschalt + Strg + G)"}
+  },
+  "image_buttons": {
+    "1": {"image": "StreamDeckPi/resources/wt.png", "description": "Open wt (Windows Terminal)"},
+    "2": {"image": "StreamDeckPi/resources/ds4windows.png", "description": "Open DS4Windows"},
+    "3": {"image": "StreamDeckPi/resources/bluetooth.png", "description": "Open Bluetooth settings (ms-settings:bluetooth)"},
+    "4": {"image": "StreamDeckPi/resources/coding_folder.png", "description": "Open coding folder"},
+    "5": {"image": "StreamDeckPi/resources/design_folder.png", "description": "Open design folder"},
+    "6": {"image": "StreamDeckPi/resources/virtualbox.png", "description": "Open virtualbox"},
+
+    "7": {"image": "StreamDeckPi/resources/discord_mute_mic.png", "description": "Mute microphone (Discord) (Shortcut: Alt + M)"},
+    "8": {"image": "StreamDeckPi/resources/discord_mute_headset.png", "description": "Mute headset (Discord) (Shortcut: Alt + J)"},
+    "9": {"image": "StreamDeckPi/resources/discord_overlay.png", "description": "Show overlay chat (Discord) (Shortcut: Alt + E)"},
+    "10": {"image": "StreamDeckPi/resources/screenshare.png", "description": "Turn on/off screenshare (Discord) (Shortcut: Strg + Alt + L)"},
+    "11": {"image": "StreamDeckPi/resources/signal.png", "description": "Open Signal"},
+    "12": {"image": "StreamDeckPi/resources/whatsapp.png", "description": "Open WhatsApp"},
+
+    "13": {"image": "StreamDeckPi/resources/leagueoflegends.png", "description": "Open League of Legends"},
+    "14": {"image": "StreamDeckPi/resources/kodi.png", "description": "Kodi"},
+    "15": {"image": "StreamDeckPi/resources/netflix.png", "description": "Open Netflix"},
+    "16": {"image": "StreamDeckPi/resources/reddit.png", "description": "Open Reddit"},
+    "17": {"image": "StreamDeckPi/resources/3uTools.png", "description": "Open 3uTools"},
+    "18": {"image": "StreamDeckPi/resources/calculator.png", "description": "Open calculator"}
+  }
+}
