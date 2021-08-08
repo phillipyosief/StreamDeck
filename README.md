@@ -27,7 +27,7 @@ Windows
 git clone https://github.com/philliphqs/StreamDeck.git
 ```
 
-## Histórico de lançamentos
+## Release History
 
 * 0.0.1-alpha
     * Prototype
@@ -36,4 +36,14 @@ git clone https://github.com/philliphqs/StreamDeck.git
 
 philliphqs – [@phillip_hqs](https://twitter.com/philliphqs) – [philliphqs@protonmail.com](mailto:philliphqs@protonmail.com)
 
-License: MIT
+Distributed under the MIT license. See ``LICENSE`` for more information.
+
+[https://github.com/philliphqs/](https://github.com/philliphqs/)
+
+## Contributing
+
+1. Fork it (<https://github.com/yourname/yourproject/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
