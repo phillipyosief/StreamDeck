@@ -14,7 +14,11 @@ Windows
   3. Press Win + R and type ``shell:startup``
   4. Put the ``StreamDeck-Server.exe`` in the folder
   5. Restart your Computer
-  6. Take your StreamDeck device and   
+  6. Take your StreamDeck device and download Python 3.9 
+  7. Download [``StreamDeck.zip``](https://github.com/philliphqs/)
+  8. Extract ``StreamDeck.zip``
+  9. Open Terminal and type ```python -m pip install dearpygui, requests```
+  10. Type ```python StreamDeck-Client.py```
 
 
 ## Obter repositório
