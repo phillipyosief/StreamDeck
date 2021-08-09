@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/philliphqs/StreamDeck/main/Project/ICON_with_TEXT_compressed.png" alt="ICON_with_TEXT">
+<img src="https://raw.githubusercontent.com/philliphqs/StreamDeck/main/Project/ICON_with_TEXT_compressed.png" alt="ICON_with_TEXT" width="770" height="130">
 
 > Use any device which can run python as a streamdeck like a Raspberry Pi
 
@@ -33,10 +33,10 @@ git clone https://github.com/philliphqs/StreamDeck.git
 
 ## Coming features
 
+* 0.0.5-alpha
+    * Support for phone/tablets
 * 0.1.0-alpha
     * Customization of Buttons
-* 0.0.5-alpha
-    * Support for phone
 
 ## Meta
 
