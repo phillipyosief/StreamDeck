@@ -9,10 +9,7 @@ An nice alternative for the Elgato StreamDeck if you want to save some money
 
 ## Installation
 
-  1. Download [``StreamDeck-Server.exe``](https://github.com/philliphqs/)
-  2. Press Win + R and type ``shell:startup``
-  3. Put the ``StreamDeck-Server.exe`` file in the folder
-  4. Restart your Computer
+  1. Download [``StreamDeck-Server-Setup.exe``](https://github.com/philliphqs/)
   5. Take your StreamDeck device and download Python 3.9 
   6. Download [``StreamDeck.zip``](https://github.com/philliphqs/)
   7. Extract ``StreamDeck.zip``
