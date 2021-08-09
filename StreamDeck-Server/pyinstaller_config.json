@@ -1,0 +1,109 @@
+{
+ "version": "auto-py-to-exe-configuration_v1",
+ "pyinstallerOptions": [
+  {
+   "optionDest": "noconfirm",
+   "value": true
+  },
+  {
+   "optionDest": "filenames",
+   "value": "D:/Coding/Python/StreamDeck/StreamDeck-Server/server.py"
+  },
+  {
+   "optionDest": "onefile",
+   "value": true
+  },
+  {
+   "optionDest": "console",
+   "value": false
+  },
+  {
+   "optionDest": "icon_file",
+   "value": "D:/Coding/Python/StreamDeck/Project/ICON.ico"
+  },
+  {
+   "optionDest": "name",
+   "value": "StreamDeck-Server"
+  },
+  {
+   "optionDest": "ascii",
+   "value": false
+  },
+  {
+   "optionDest": "clean_build",
+   "value": false
+  },
+  {
+   "optionDest": "strip",
+   "value": false
+  },
+  {
+   "optionDest": "noupx",
+   "value": false
+  },
+  {
+   "optionDest": "version_file",
+   "value": "D:/Coding/Python/StreamDeck/StreamDeck-Server/compile/VERSIONFILE.txt"
+  },
+  {
+   "optionDest": "uac_admin",
+   "value": false
+  },
+  {
+   "optionDest": "uac_uiaccess",
+   "value": false
+  },
+  {
+   "optionDest": "win_private_assemblies",
+   "value": false
+  },
+  {
+   "optionDest": "win_no_prefer_redirects",
+   "value": false
+  },
+  {
+   "optionDest": "bootloader_ignore_signals",
+   "value": false
+  },
+  {
+   "optionDest": "disable_windowed_traceback",
+   "value": false
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Coding/Python/StreamDeck/StreamDeck-Server/routes;routes/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Coding/Python/StreamDeck/StreamDeck-Server/systray;systray/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Coding/Python/StreamDeck/StreamDeck-Server/systray/tray.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Coding/Python/StreamDeck/StreamDeck-Server/routes/discord.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Coding/Python/StreamDeck/StreamDeck-Server/routes/photoshop.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Coding/Python/StreamDeck/StreamDeck-Server/routes/start.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Coding/Python/StreamDeck/StreamDeck-Server/ICON_NOBORDER.ico;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Coding/Python/StreamDeck/StreamDeck-Server;StreamDeck-Server/"
+  }
+ ],
+ "nonPyinstallerOptions": {
+  "increaseRecursionLimit": true,
+  "manualArguments": ""
+ }
+}

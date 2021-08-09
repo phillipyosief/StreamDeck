@@ -1,0 +1,1 @@
+Before you install StreamDeck-Server take a look on the tutorial https://github.com/philliphqs/StreamDeck
