@@ -1,0 +1,32 @@
+{
+  "buttons": {
+    "1": {"title": "Ebene Rastern", "description": "Ebene Rastern (Photoshop) (Shortcut: Strg + Shift + R)"},
+    "2": {"title": "Schnell-Export", "description": "Schnell-Export (Photoshop) (Shortcut: Umschalt + Strg + S)"},
+    "3": {"title": "Exportieren als", "description": "Exportieren als (Photoshop) (Shortcut: Alt + Umschalt + Strg + W)"},
+    "4": {"title": "Fülloptionen", "description": "Fülloptionen (Photoshop) (Shortcut: Alt + Umschalt + Strg + F)"},
+    "5": {"title": "Zuschneiden", "description": "Zuschneiden (Photoshop) (Shortcut: Alt + Strg + Umschalt + Z)"},
+    "6": {"title": "Std. Workspace", "description": "Standard Arbeitsbereich (Photoshop) (Shortcut: Umschalt + Strg + G)"}
+  },
+  "image_buttons": {
+    "1": {"image": "resources/wt.png", "description": "Open wt (Windows Terminal)"},
+    "2": {"image": "resources/ds4windows.png", "description": "Open DS4Windows"},
+    "3": {"image": "resources/bluetooth.png", "description": "Open Bluetooth settings (ms-settings:bluetooth)"},
+    "4": {"image": "resources/coding_folder.png", "description": "Open coding folder"},
+    "5": {"image": "resources/design_folder.png", "description": "Open design folder"},
+    "6": {"image": "resources/virtualbox.png", "description": "Open virtualbox"},
+
+    "7": {"image": "resources/discord_mute_mic.png", "description": "Mute microphone (Discord) (Shortcut: Alt + M)"},
+    "8": {"image": "resources/discord_mute_headset.png", "description": "Mute headset (Discord) (Shortcut: Alt + J)"},
+    "9": {"image": "resources/discord_overlay.png", "description": "Show overlay chat (Discord) (Shortcut: Alt + E)"},
+    "10": {"image": "resources/screenshare.png", "description": "Turn on/off screenshare (Discord) (Shortcut: Strg + Alt + L)"},
+    "11": {"image": "resources/signal.png", "description": "Open Signal"},
+    "12": {"image": "resources/whatsapp.png", "description": "Open WhatsApp"},
+
+    "13": {"image": "resources/leagueoflegends.png", "description": "Open League of Legends"},
+    "14": {"image": "resources/kodi.png", "description": "Kodi"},
+    "15": {"image": "resources/netflix.png", "description": "Open Netflix"},
+    "16": {"image": "resources/reddit.png", "description": "Open Reddit"},
+    "17": {"image": "resources/3uTools.png", "description": "Open 3uTools"},
+    "18": {"image": "resources/calculator.png", "description": "Open calculator"}
+  }
+}
