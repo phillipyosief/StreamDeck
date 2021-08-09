@@ -1,6 +1,6 @@
 from dearpygui.dearpygui import *
 
-from StreamDeck_Client.src.backend.client import *
+from backend.client import *
 import json
 
 

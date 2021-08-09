@@ -1,7 +1,7 @@
 from dearpygui.dearpygui import *
 
-from StreamDeck_Client.src.ui import Buttons
-from StreamDeck_Client.src.ui import NavBar
+from ui import Buttons
+from ui import NavBar
 
 
 def show():

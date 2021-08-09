@@ -9,7 +9,7 @@ README = (HERE / "README.md").read_text()
 
 # This call to setup() does all the work
 setup(
-    name="StreamDeck-Client-Test",
+    name="StreamDeck-Client",
     version="0.0.2-alpha",
     description="Use any device which can run python as a streamdeck like a Raspberry Pi",
     long_description=README,
