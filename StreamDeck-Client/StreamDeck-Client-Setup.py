@@ -80,8 +80,8 @@ def check_python_version():
 
 
 def install_packages():
-    subprocess.call('pip --disable-pip-version-check install dearpygui', stdout=subprocess.DEVNULL)
-    subprocess.call('pip --disable-pip-version-check install requests', stdout=subprocess.DEVNULL)
+    subprocess.call('python3.9 -m pip --disable-pip-version-check install dearpygui', stdout=subprocess.DEVNULL)
+    subprocess.call('python3.9 -m pip --disable-pip-version-check install requests', stdout=subprocess.DEVNULL)
 
 
 def check_internet():
@@ -99,7 +99,8 @@ def add_to_startup():
 
 
 def download_sdclient():
-    subprocess.call('cd /etc/', stdout=subprocess.DEVNULL)
+    subprocess.call('cd ~', stdout=subprocess.DEVNULL)
+    subprocess.call('cd /etc', stdout=subprocess.DEVNULL)
     subprocess.call('git clone https://github.com/philliphqs/StreamDeck', stdout=subprocess.DEVNULL)
 
 
@@ -113,7 +114,7 @@ def check_platform():
 
 
 def create_run():
-    with open('home/StreamDeck.sh', 'w') as r:
+    with open('~/home/StreamDeck.sh', 'w') as r:
         r.write('cd etc/StreamDeck/StreamDeck-Client\n'
                 'python3.9 -m StreamDeck-Client.py')
         r.close()
