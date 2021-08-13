@@ -90,8 +90,9 @@ def install_packages():
 
     :return:
     """
-    subprocess.call(['python3', '-m', 'pip', '--disable-pip-version-check', 'install', 'dearpygui'], stdout=DEV_NULL)
-    subprocess.call(['python3', '-m', 'pip', '--disable-pip-version-check', 'install', 'requests'], stdout=DEV_NULL)
+    os.system('os.system' + "(" + "echo 'foo' &> /dev/null)")
+    os.system('python3 -m pip --disable-pip-version-check install dearpygui')
+    os.system('python3 -m pip --disable-pip-version-check install requests')
 
 
 def check_internet():
@@ -125,6 +126,7 @@ def download_sdclient():
     :return:
     """
     os.system('cd /home/pi/')
+    os.system('rm -r StreamDeck')
     subprocess.call(['git', 'clone', 'https://github.com/philliphqs/StreamDeck'], stdout=subprocess.DEVNULL)
 
 
