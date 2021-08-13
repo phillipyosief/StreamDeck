@@ -197,7 +197,7 @@ install_packages_thread.start()
 while install_packages_thread.is_alive():
     animated_loading('Installing Packages: ')
 
-print(f'\rInstalling Packages: {Colors.GREEN}Done!{Colors.WHITE}')
+print(f'\r\r\r\r\rInstalling Packages: {Colors.GREEN}Done!{Colors.WHITE}')
 
 # Step 2 - Downloading StreamDeck-Client
 download_sdclient_thread = threading.Thread(name='download_sdclient', target=download_sdclient)
