@@ -80,11 +80,21 @@ def check_python_version():
 
 
 def install_packages():
+    """
+    Install required packages
+
+    :return:
+    """
     subprocess.call('python3.9 -m pip --disable-pip-version-check install dearpygui', stdout=subprocess.DEVNULL)
     subprocess.call('python3.9 -m pip --disable-pip-version-check install requests', stdout=subprocess.DEVNULL)
 
 
 def check_internet():
+    """
+    Checking connection between GitHub and your device
+
+    :return:
+    """
     try:
         urllib.request.urlopen('https://github.com')
         return True
@@ -93,18 +103,32 @@ def check_internet():
 
 
 def add_to_startup():
+    """
+    Adding StreamDeck to startup
+
+    :return:
+    """
     with open('/etc/rc.local', 'a') as s:
         s.write('\npython3.9 /etc/StreamDeck/StreamDeck-Client/StreamDeck-Client.py')
         s.close()
 
 
 def download_sdclient():
-    subprocess.call('cd ~', stdout=subprocess.DEVNULL)
+    """
+    Download StreamDeck
+
+    :return:
+    """
     subprocess.call('cd /etc', stdout=subprocess.DEVNULL)
     subprocess.call('git clone https://github.com/philliphqs/StreamDeck', stdout=subprocess.DEVNULL)
 
 
 def check_platform():
+    """
+    Check device platform
+
+    :return:
+    """
     if sys.platform == "linux" or sys.platform == "linux2":
         pass
     else:
@@ -115,6 +139,11 @@ def check_platform():
 
 
 def create_run():
+    """
+    Create run script for StreamDeck
+
+    :return:
+    """
     with open('~/home/StreamDeck.sh', 'w') as r:
         r.write('cd etc/StreamDeck/StreamDeck-Client\n'
                 'python3.9 -m StreamDeck-Client.py')
@@ -201,7 +230,9 @@ else:
     print(Colors.RED + ask_step1 + ' is not an valid answer!' + Colors.WHITE)
 
 # Info 2
-print('StreamDeck is now on your device if you need help go to GitHub and create an issue\n'
+subprocess.call('clear')
+print('---------------------------\n'
+      'StreamDeck is now on your device if you need help go to GitHub and create an issue\n'
       '---------------------------\n'
       f'StreamDeck related {Colors.BLUE}links{Colors.WHITE}\n'
       f'Repo: {Colors.BLUE}https://github.com/philliphqs/StreamDeck{Colors.WHITE}\n'
