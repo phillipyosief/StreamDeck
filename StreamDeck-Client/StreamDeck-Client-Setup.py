@@ -94,7 +94,7 @@ def check_internet():
 
 def add_to_startup():
     with open('/etc/rc.local', 'a') as s:
-        s.write('\npython3 /etc/StreamDeck/StreamDeck-Client/StreamDeck-Client.py')
+        s.write('\npython3.9 /etc/StreamDeck/StreamDeck-Client/StreamDeck-Client.py')
         s.close()
 
 
@@ -115,7 +115,7 @@ def check_platform():
 def create_run():
     with open('home/StreamDeck.sh', 'w') as r:
         r.write('cd etc/StreamDeck/StreamDeck-Client\n'
-                'python3 -m StreamDeck-Client.py')
+                'python3.9 -m StreamDeck-Client.py')
         r.close()
     subprocess.call('chmod +x ./StreamDeck.sh', stdout=subprocess.DEVNULL)
 
