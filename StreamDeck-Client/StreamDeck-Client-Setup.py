@@ -90,7 +90,7 @@ def install_packages():
 
     :return:
     """
-    os.system("echo 'foo' &> /dev/null")
+    print('\n')
     os.system('python3 -m pip --disable-pip-version-check install dearpygui')
     os.system('python3 -m pip --disable-pip-version-check install requests')
 
@@ -125,6 +125,7 @@ def download_sdclient():
 
     :return:
     """
+    print('\n')
     os.system('cd /home/pi/')
     os.system('rm -r StreamDeck')
     subprocess.call(['git', 'clone', 'https://github.com/philliphqs/StreamDeck'], stdout=subprocess.DEVNULL)
@@ -199,7 +200,7 @@ install_packages_thread.start()
 while install_packages_thread.is_alive():
     animated_loading('Installing Packages: ')
 
-print(f'\r\r\r\r\rInstalling Packages: {Colors.GREEN}Done!{Colors.WHITE}')
+print(f'\r\r\r\r\r\r\r\r\r\rInstalling Packages: {Colors.GREEN}Done!{Colors.WHITE}')
 
 # Step 2 - Downloading StreamDeck-Client
 download_sdclient_thread = threading.Thread(name='download_sdclient', target=download_sdclient)
