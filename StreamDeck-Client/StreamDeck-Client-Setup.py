@@ -149,7 +149,7 @@ def create_run():
 
     :return:
     """
-    with open('~/home/StreamDeck.sh', 'w') as r:
+    with open('/home/StreamDeck.sh', 'w') as r:
         r.write('cd etc/StreamDeck/StreamDeck-Client\n'
                 'python3 -m StreamDeck-Client.py')
         r.close()
@@ -159,7 +159,9 @@ def create_run():
 subprocess.call('clear')
 
 print(title() + '---Client-Setup----------------------------------------------')
+print(os.getcwd())
 os.chdir('/')
+print(os.getcwd())
 
 # PreStep 1 - Checking Python version
 check_python_version_thread = threading.Thread(name='check_python_version', target=check_python_version)
