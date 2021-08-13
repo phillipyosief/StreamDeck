@@ -114,7 +114,7 @@ def add_to_startup():
     :return:
     """
     with open('/etc/rc.local', 'a') as s:
-        s.write('\npython3 /etc/StreamDeck/StreamDeck-Client/StreamDeck-Client.py')
+        s.write('\npython3 /home/pi/StreamDeck/StreamDeck-Client/StreamDeck-Client.py')
         s.close()
 
 
@@ -124,7 +124,7 @@ def download_sdclient():
 
     :return:
     """
-    os.system('cd /etc')
+    os.system('cd /home/pi/')
     subprocess.call(['git', 'clone', 'https://github.com/philliphqs/StreamDeck'], stdout=subprocess.DEVNULL)
 
 
@@ -150,10 +150,10 @@ def create_run():
     :return:
     """
     with open('/home/pi/StreamDeck.sh', 'w') as r:
-        r.write('cd etc/StreamDeck/StreamDeck-Client\n'
+        r.write('cd /home/pi/StreamDeck/StreamDeck-Client\n'
                 'python3 -m StreamDeck-Client.py')
         r.close()
-    os.system('chmod +x ./StreamDeck.sh')
+    os.system('chmod +x ./home/pi/StreamDeck.sh')
 
 
 subprocess.call('clear')
