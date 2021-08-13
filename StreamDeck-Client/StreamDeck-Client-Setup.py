@@ -124,7 +124,7 @@ def download_sdclient():
 
     :return:
     """
-    subprocess.call('cd /etc', stdout=subprocess.DEVNULL)
+    os.system('cd /etc')
     subprocess.call('git clone https://github.com/philliphqs/StreamDeck', stdout=subprocess.DEVNULL)
 
 
