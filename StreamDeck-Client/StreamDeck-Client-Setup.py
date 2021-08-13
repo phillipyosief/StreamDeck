@@ -90,8 +90,8 @@ def install_packages():
 
     :return:
     """
-    subprocess.call('python3 -m pip --disable-pip-version-check install dearpygui', stdout=subprocess.DEVNULL)
-    subprocess.call('python3 -m pip --disable-pip-version-check install requests', stdout=subprocess.DEVNULL)
+    os.system('python3 -m pip --disable-pip-version-check install dearpygui')
+    os.system('python3 -m pip --disable-pip-version-check install requests')
 
 
 def check_internet():
@@ -153,7 +153,7 @@ def create_run():
         r.write('cd etc/StreamDeck/StreamDeck-Client\n'
                 'python3 -m StreamDeck-Client.py')
         r.close()
-    subprocess.call('chmod +x ./StreamDeck.sh', stdout=subprocess.DEVNULL)
+    os.system('chmod +x ./StreamDeck.sh')
 
 
 subprocess.call('clear')
