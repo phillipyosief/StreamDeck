@@ -108,7 +108,8 @@ def check_platform():
     if sys.platform == "linux" or sys.platform == "linux2":
         pass
     else:
-        print(Colors.RED + f'You are using an incompatible OS for StreamDeck-Client (required: Linux / your os: {sys.platform})' + Colors.White)
+        print(
+            Colors.RED + f'You are using an incompatible OS for StreamDeck-Client (required: Linux / your os: {sys.platform})' + Colors.White)
         time.sleep(100)
         exit()
 
@@ -120,6 +121,8 @@ def create_run():
         r.close()
     subprocess.call('chmod +x ./StreamDeck.sh', stdout=subprocess.DEVNULL)
 
+
+subprocess.call('clear')
 
 print(title() + '---Client-Setup----------------------------------------------')
 
@@ -201,16 +204,17 @@ else:
 print('StreamDeck is now on your device if you need help go to GitHub and create an issue\n'
       '---------------------------\n'
       f'StreamDeck related {Colors.BLUE}links{Colors.WHITE}\n'
-      'Repo: https://github.com/philliphqs/StreamDeck\n'
-      'Website: https://philliphqs.github.io/StreamDeck\n'
+      f'Repo: {Colors.BLUE}https://github.com/philliphqs/StreamDeck{Colors.WHITE}\n'
+      f'Website: {Colors.BLUE}https://philliphqs.github.io/StreamDeck{Colors.WHITE}\n'
       '---------------------------\n'
       'About me\n'
       'Author: philliphqs\n'
-      'GitHub: https://github.com/philliphqs\n'
-      'Website: https://philliphqs.github.io\n'
+      f'{Colors.GREY}GitHub: {Colors.BLUE}https://github.com/philliphqs{Colors.WHITE}\n'
+      f'Website: {Colors.BLUE}https://philliphqs.github.io{Colors.WHITE}\n'
       '---------------------------\n'
       f'{Colors.BLUE2}Discord\n'
-      f'{Colors.VIOLET}hqsartworks{Colors.WHITE}: https://discord.gg/ZrbW2FHdjH\n'
-      f'alphaclan Community: https://discord.gg/faM2eWpK8m\n'
+      f'{Colors.VIOLET}hqsartworks{Colors.WHITE}: {Colors.BLUE}https://discord.gg/ZrbW2FHdjH{Colors.WHITE}\n'
+      f'{Colors.GREY}alphaclan {Colors.WHITE}Community: {Colors.BLUE}https://discord.gg/faM2eWpK8m{Colors.WHITE}\n'
       f'--------------------------\n'
-      f'{Colors.BLINK}Click CTRL+C or CTRL+Z to quit\n')
+      f'{Colors.BLINK}Click CTRL+C or CTRL+Z to quit\n{Colors.WHITE}')
+time.sleep(100)
