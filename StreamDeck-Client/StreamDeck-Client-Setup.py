@@ -90,7 +90,7 @@ def install_packages():
 
     :return:
     """
-    os.system('os.system' + "(" + "echo 'foo' &> /dev/null)")
+    os.system("echo 'foo' &> /dev/null")
     os.system('python3 -m pip --disable-pip-version-check install dearpygui')
     os.system('python3 -m pip --disable-pip-version-check install requests')
 
