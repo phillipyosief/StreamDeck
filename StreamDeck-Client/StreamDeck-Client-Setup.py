@@ -159,7 +159,7 @@ def create_run():
 subprocess.call('clear')
 
 print(title() + '---Client-Setup----------------------------------------------')
-print(os.getcwd())
+os.chdir('/')
 
 # PreStep 1 - Checking Python version
 check_python_version_thread = threading.Thread(name='check_python_version', target=check_python_version)
