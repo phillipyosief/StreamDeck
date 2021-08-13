@@ -70,11 +70,16 @@ def title():
 
 
 def check_python_version():
-    if '3.9' in python_version():
+    if '3.7' in python_version():
+        pass
+    elif '3.8' in python_version():
+        pass
+    elif '3.9' in python_version():
         pass
     else:
         print(
-            Colors.RED + f'Your Python version is outdated (required: 3.9 or newer / your version: {python_version()})' + Colors.WHITE)
+            Colors.RED + f'Your Python version is outdated (required: 3.9 or newer / your version: {python_version()})'
+            + Colors.WHITE)
         time.sleep(100)
         exit()
 
