@@ -9,7 +9,7 @@ minimize_id = generate_uuid()
 CONNECTION_STATE = generate_uuid()
 SPACING = generate_uuid()
 
-with open('resources/client.json') as c:
+with open('StreamDeck/StreamDeck-Client/resources/client.json') as c:
     client = json.load(c)
 
 
