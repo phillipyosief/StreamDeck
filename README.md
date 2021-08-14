@@ -14,11 +14,12 @@ An nice alternative for the Elgato StreamDeck if you want to save some money
 ## Installation
 
   1. Download [``StreamDeck-Server-Setup.exe``](https://github.com/philliphqs/)
-  2. Take your StreamDeck device and download Python 3.9 
+  2. Take your StreamDeck device and download Python 3.7
   3. Type this command in Terminal 
 ```
-wget https://github.com/philliphqs/StreamDeck/releases/download/0.0.3-alpha/StreamDeck-Client-Setup.py
-python3 StreamDeck-Client-Setup.py
+rm StreamDeck-Client-Setup.py
+wget https://github.com/philliphqs/StreamDeck/releases/download/0.0.4-alpha/StreamDeck-Client-Setup.py
+sudo python3 StreamDeck-Client-Setup.py
 ```
 ## Clone Repository
 
