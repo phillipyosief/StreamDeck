@@ -39,10 +39,10 @@ git clone https://github.com/philliphqs/StreamDeck.git
 * 0.0.3-alpha
     * StreamDeck-Client
         * Installer
-* 0.0.5-alpha
-    * Support for phone/tablets
 * 0.1.0-alpha
     * Customization of Buttons
+* 0.1.5-alpha
+    * Support for phone/tablets
 
 ## Meta
 
