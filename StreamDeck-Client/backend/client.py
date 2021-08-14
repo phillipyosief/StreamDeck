@@ -1,7 +1,7 @@
 import requests
 import json
 
-with open('resources/client.json', 'r') as c:
+with open('StreamDeck/StreamDeck-Client/resources/client.json', 'r') as c:
     client = json.load(c)
 
     ip = client['ip'] + ':' + client['port']
