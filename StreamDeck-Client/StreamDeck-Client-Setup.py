@@ -128,6 +128,7 @@ def download_sdclient():
     print('\n')
     os.system('cd /home/pi/')
     os.system('rm -r StreamDeck')
+    subprocess.call('cd /home/pi')
     subprocess.call(['git', 'clone', 'https://github.com/philliphqs/StreamDeck'], stdout=subprocess.DEVNULL)
 
 
