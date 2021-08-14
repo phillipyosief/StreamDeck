@@ -115,7 +115,7 @@ def add_to_startup():
     :return:
     """
     with open('/etc/rc.local', 'a') as s:
-        s.write('\npython3 /StreamDeck/StreamDeck-Client/StreamDeck-Client.py')
+        s.write('\npython3 /home/pi/StreamDeck/StreamDeck-Client/StreamDeck-Client.py')
         s.close()
 
 
@@ -153,7 +153,7 @@ def create_run():
     :return:
     """
     with open('/home/pi/StreamDeck.sh', 'w') as r:
-        r.write('python3 /StreamDeck/StreamDeck-Client/StreamDeck-Client.py')
+        r.write('python3 /home/pi/StreamDeck/StreamDeck-Client/StreamDeck-Client.py')
         r.close()
     os.system('chmod +x ./home/pi/StreamDeck.sh')
 
