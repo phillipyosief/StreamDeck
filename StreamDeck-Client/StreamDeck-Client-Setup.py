@@ -126,10 +126,9 @@ def download_sdclient():
     :return:
     """
     print('\n')
-    os.system('cd /home/pi/')
-    os.system('rm -r StreamDeck')
+    os.system('rm -r /home/pi/StreamDeck')
 
-    subprocess.call(['git', 'clone', 'https://github.com/philliphqs/StreamDeck', '/home/pi/'], stdout=subprocess.DEVNULL)
+    subprocess.call(['git', 'clone', 'https://github.com/philliphqs/StreamDeck', '/home/pi/StreamDeck'], stdout=subprocess.DEVNULL)
 
 
 def check_platform():
