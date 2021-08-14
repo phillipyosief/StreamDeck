@@ -3,5 +3,5 @@ import os
 
 
 if __name__ == '__main__':
-    os.chdir('/StreamDeck/StreamDeck-Client')
+    os.getcwd()
     Window.show()
