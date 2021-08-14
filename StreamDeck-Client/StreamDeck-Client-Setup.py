@@ -153,8 +153,7 @@ def create_run():
     :return:
     """
     with open('/home/pi/StreamDeck.sh', 'w') as r:
-        r.write('cd /StreamDeck/StreamDeck-Client\n'
-                'python3 -m StreamDeck-Client.py')
+        r.write('python3 /StreamDeck/StreamDeck-Client/StreamDeck-Client.py')
         r.close()
     os.system('chmod +x ./home/pi/StreamDeck.sh')
 
