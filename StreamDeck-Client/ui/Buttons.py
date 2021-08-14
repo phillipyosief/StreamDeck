@@ -8,14 +8,14 @@ def show():
     button_init()
 
 
-with open('resources/buttons.json', 'r') as b:
+with open('StreamDeck/StreamDeck-Client/resources/buttons.json', 'r') as b:
     btns = json.load(b)
     img = btns['image_buttons']
     btn = btns['buttons']
 
 
 class Images:
-    width, height, channels, data = load_image("resources/image.png")
+    width, height, channels, data = load_image("StreamDeck/StreamDeck-Client/resources/image.png")
     with texture_registry():
         texture_id = add_static_texture(width, height, data)
 
