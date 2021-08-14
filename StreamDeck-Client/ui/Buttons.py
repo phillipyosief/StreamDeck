@@ -200,7 +200,7 @@ def three():
 
 
 def button_init():
-    with open('resources/buttons.json', 'r') as bjson:
+    with open('StreamDeck/StreamDeck-Client/resources/buttons.json', 'r') as bjson:
         one()
         #
         add_spacing()
