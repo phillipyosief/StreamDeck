@@ -1,34 +1,33 @@
 from flask import Flask, Blueprint, jsonify
 
 import pyautogui
+import pypresence
 
 discord = Blueprint('discord', __name__, url_prefix='/discord')
 
 
-@discord.route('/test')
-def test():
-    return 'working'
+# Pillow (PIL) is required (pip install pillow)
+@discord.route('/mute')
+def mute():
+    # mute = pyautogui.locateCenterOnScreen('img/discord_mute.png')  # If the file is not a png file it will not work
+    # if mute == None:
+    #     unmute = pyautogui.locateCenterOnScreen(
+    #         'img/discord_unmute.png')  # If the file is not a png file it will not work
+    #     print(unmute)
+    #     pyautogui.moveTo(unmute)
+    #     pyautogui.click()
+    # else:
+    #     pyautogui.moveTo(mute)
+    #     pyautogui.click()
 
-
-@discord.route('/mute_mic')
-def mute_mic():
-    pyautogui.hotkey('alt', 'm')
     return '...'
 
 
-@discord.route('/mute_headset')
-def mute_headset():
-    pyautogui.hotkey('alt', 'j')
-    return '...'
+@discord.route('/connect')
+def connect():
+    c = pypresence.Client(876122754200522782)
+    c.start()
+    auth = c.authorize(876122754200522782, scopes=['rpc'])  # If you need other scopes, add them
+    code_grant = auth.code
 
-
-@discord.route('/show_overlay_chat')
-def show_overlay_chat():
-    pyautogui.hotkey('alt', 'e')
-    return '...'
-
-
-@discord.route('/screenshare')
-def screenshare():
-    pyautogui.hotkey('strg', 'alt', 'l')
-    return '...'
+    c.set_voice_settings(mute=True)

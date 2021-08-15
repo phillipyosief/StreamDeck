@@ -1,10 +1,11 @@
-from flask import Flask, jsonify, Blueprint, request
+from flask import Flask, jsonify, request
 
-from routes.start import start
 from routes.discord import discord
-from routes.photoshop import photoshop
+from routes.command import command
+from routes.hotkey import hotkey
+from routes.obs import obs
 
-from systray import tray
+import tray
 
 import socket
 import threading
@@ -29,24 +30,27 @@ def shutdown():
     return "Shutting down..."
 
 
-@app.route('/test')
+@app.route('/layout_editor')
 def test():
-    return jsonify({'test': 'success'})
+    tray.edit_layout(None)
+    return '...'
 
 
 def init_app():
     app.register_blueprint(discord)
-    app.register_blueprint(start)
-    app.register_blueprint(photoshop)
+    app.register_blueprint(command)
+    app.register_blueprint(hotkey)
+    print('obs')
+    app.register_blueprint(obs)
 
 
 def main():
     init_app()
 
-    server_thread = threading.Thread(target=tray.start_tray)
-    server_thread.start()
+    tray_thread = threading.Thread(target=tray.start_tray)
+    tray_thread.start()
 
-    app.run(host=localip, port=52800, debug=False)
+    app.run(host=localip, port=52801, debug=False)
 
 
 if __name__ == '__main__':
