@@ -36,11 +36,9 @@ git clone https://github.com/philliphqs/StreamDeck.git
     * System tray
 
 ## Coming features
-* 0.0.3-alpha
-    * StreamDeck-Client
-        * Installer
 * 0.1.0-alpha
     * Customization of Buttons
+    * Layout Editor
 * 0.1.5-alpha
     * Support for phone/tablets
 
