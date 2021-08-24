@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/StreamDeck-Server/libs/voicemeeter-remote-python" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/StreamDeck-Server/libs/voicemeeter_remote_python" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/voicemeeter-remote-python" vcs="Git" />
   </component>
 </project>

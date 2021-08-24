@@ -1,6 +1,8 @@
 from dearpygui.dearpygui import *
 from tkinter import Tk, filedialog
 
+from editor.ui import ButtonEditor
+
 import json
 import requests
 import keyboard

@@ -3,12 +3,14 @@ from dearpygui.dearpygui import *
 from editor.ui import Buttons
 from editor.ui import Tools
 from editor.ui import NavBar
+from editor.ui import Theme
 
 # from ui import Buttons
 
 
 def show():
     with window(label="MainWindow", id=5) as main_window:
+        Theme.load()
         NavBar.show()
         Tools.show()
         Buttons.show()

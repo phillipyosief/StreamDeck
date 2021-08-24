@@ -50,7 +50,7 @@ def main():
     tray_thread = threading.Thread(target=tray.start_tray)
     tray_thread.start()
 
-    app.run(host=localip, port=52801, debug=False)
+    app.run(host=localip, port=5280, debug=False)
 
 
 if __name__ == '__main__':

@@ -3,17 +3,26 @@ from flask import Blueprint, request, jsonify
 import os
 import time
 from obswebsocket import obsws, requests
+import threading
 
 obs = Blueprint('obs', __name__, url_prefix='/obs')
 
 host = "localhost"
-port = 4445
+port = 4444
 
-try:
-    ws = obsws(host, port)
-    ws.connect()
-except:
-    print('error connecting obs')
+ws = obsws(host, port)
+
+def connect_thread():
+    while True:
+        try:
+            ws.connect()
+        except:
+            print('error connecting obs')
+        time.sleep(10)
+
+
+obs_connect_thread = threading.Thread(target=connect_thread)
+obs_connect_thread.start()
 
 """
 obs-websocket plugin needed 
@@ -177,6 +186,12 @@ def pause_recording():
     return '...'
 
 
+@obs.route('/resume_recording')
+def resume_recording():
+    ws.call(requests.ResumeRecording)
+    return '...'
+
+
 @obs.route('/start_streaming')
 def start_streaming():
     ws.call(requests.StartStreaming())
@@ -195,7 +210,6 @@ def stop_streaming():
 def get_scenes():
     scenes = ws.call(requests.GetSceneList())
     scenes = scenes.getScenes()
-    print(scenes)
     return jsonify(scenes)
 
 
