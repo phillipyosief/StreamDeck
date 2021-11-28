@@ -36,8 +36,8 @@ localip = [(s.connect(('8.8.8.8', 53)), s.getsockname()[0], s.close()) for s in
 def show(sender, app_data, user_data):
     key = user_data
 
-    with window(label='Edit Button ' + str(key), id=ButtonEditor_id, width=400, height=250, no_move=True, no_close=True,
-                no_scrollbar=False, no_resize=True, modal=True):
+    with window(label='Edit Button ' + str(key), id=ButtonEditor_id, width=400, height=250, no_move=True, no_close=False,
+                no_scrollbar=False, no_resize=True, modal=True, on_close=close_cb):
         add_combo(
             items=category, label='Category', callback=category_cb, default_value='Choose a category to continue',
             no_arrow_button=False, id=category_combo
@@ -130,3 +130,14 @@ def system_selectfile_cb():
     print(file_path)
     DirString = file_path
     set_value(system_selectfile_text, DirString)
+
+
+def system_selectapp_cb():
+    Tk().withdraw()
+    file_path = filedialog.askopenfilename()
+    print(file_path)
+    DirString = file_path
+    set_value(system_selectfile_text, DirString)
+
+
+def close_cb():
